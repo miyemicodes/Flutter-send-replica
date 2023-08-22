@@ -23,25 +23,66 @@
     
   </head>
   <body>
-    <main>
+    <header  class="header" data-header>
+         <div class="container">
 
-        <!--------HOmE----------->
+         <div class="header-content">
+               <div class="logo">
+            <h2 class="h2 h-logo">$end</h2>
+               </div>
+
+               <div class="icon">
+                
+              <button
+              class="nav-toggle-btn"
+              data-nav-toggle-btn
+              arial-label="Toogle menu">
+                <i class="fa-solid fa-bars-staggered fa-bounce nav-icon open "></i>    
+               <i class="fa-solid fa-xmark fa-bounce nav-icon close"></i>
+              </button>
+               </div>
+
+       </div>      
+             
+          <nav class="navbar">
+            
+            <ul class="navbar-list">
+              <li>
+                <a href="#" class="navbar-link">
+                  HOW IT WORKS
+                </a>
+              </li>
+              <li>
+                <a href="#" class="navbar-link">
+                  SUPPORT
+                </a>
+              </li>
+            </ul>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="#" class="navbar-link btn btn-login">
+                  LOG IN
+                </a>
+              </li>
+              <li>
+                <a href="#" class="navbar-link btn btn-signup">
+                  SIGN UP      
+                </a>
+              </li>
+            </ul>
+           
+          </nav>
+
+         </div>
+    </header>
+
+    <main>
+      <!--------HOmE----------->
 
       <section id="Home">
         <div class="container h-container">
-          
-          <nav class="navbar">
-            
-            <div class="logo">
-              <h2 class="h2 h-logo">$end</h2>
-            </div>
-
-            <div class="icon">
-              <i class="fa-solid fa-bars-staggered fa-bounce nav-icon"></i>    
-              <i class="fa-solid fa-xmark fa-bounce nav-icon"></i>
-            </div>
-          </nav>
-
+         
          <div class="h-content">
             <div class="h-text">
             <h2 class="h2">Send money to those that matter</h2>
@@ -55,23 +96,25 @@
 
             <div class="h-item">
               <form>
-              
+                <div class="form-container">
+    
                 <div class="form-send">
-                  <label for=""> Send amount </label>
+                  <label for="number" class="h4"> Send amount </label>
   
                   <div class="f-amount">
                     <input type="text" value="0" >
-
-                    <div class="amount-sub">
-                      <div>
-                        <span>$</span>
-                      </div>
-                      <div class="input-select">
-                        <img src="https://flagsapi.com/NG/flat/64.png" alt="flag"> 
-                        <select> <!-- Options tag are inserted from JavaScript --> </select>
-                      </div>
+                  </div>       
+                  
+                  <div class="amount-sub">
+                    <div>
+                      <span>$</span>
                     </div>
-                  </div>               
+                    <div class="input-select">
+                      <img src="https://flagsapi.com/NG/flat/64.png" alt="flag" class="form-img"> 
+                      <select> <!-- Options tag are inserted from JavaScript --> </select>
+                    </div>
+                  </div>
+
                 </div>
   
                 <span><!----You can send a minimum of 2 EUR---->add if/else</span>
@@ -81,7 +124,7 @@
                 </div>
   
                 <div class="form-recipient"> 
-                  <label for=""> Recipient gets </label>
+                  <label for="number" class="h4"> Recipient gets </label>
                   <div class="f-recip">
                      <input type="text" value="0">
 
@@ -93,7 +136,7 @@
                       </div>
 
                       <div class="input-select">
-                        <img src="https://flagsapi.com/BE/flat/64.png" >                  
+                        <img src="https://flagsapi.com/BE/flat/64.png" alt="flag" class="form-img" >                  
                         <select> <!-- Options tag are inserted from JavaScript --> </select>
                       </div>
                       
@@ -149,6 +192,8 @@
                 </div>
   
                 <button type="button" class="btn btn-form">Send Money</button>
+                </div>
+          
               </form>
             
             <div class="h-icon">
@@ -594,7 +639,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="country_code.js"></script>
+    <script src="country-list.js"></script>
     <script src="index.js"></script>
 
   </body>
