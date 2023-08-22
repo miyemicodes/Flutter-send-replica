@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400;500;
+      700&display=swap" rel="stylesheet">
+
+    <title>Flutter website Replica</title>
+    
+  </head>
+  <body>
+    <main>
+
+        <!--------HOmE----------->
+
+      <section id="Home">
+        <div class="container h-container">
+          
+          <nav class="navbar">
+            
+            <div class="logo">
+              <h2 class="h2 h-logo">$end</h2>
+            </div>
+
+            <div class="icon">
+              <i class="fa-solid fa-bars-staggered fa-bounce nav-icon"></i>    
+              <i class="fa-solid fa-xmark fa-bounce nav-icon"></i>
+            </div>
+          </nav>
+
+         <div class="h-content">
+            <div class="h-text">
+            <h2 class="h2">Send money to those that matter</h2>
+            <p class="h3">
+              Lagos,Nairobi,Addis Ababa, or London, what does it matter? Use
+              Send to quickly and reliably send money to local bank accounts and
+              even mobile money wallets whenever you want.
+            </p>
+            </div>
+
+
+            <div class="h-item">
+              <form>
+              
+                <div class="form-send">
+                  <label for=""> Send amount </label>
+  
+                  <div class="f-amount">
+                    <input type="text" value="0" >
+
+                    <div class="amount-sub">
+                      <div>
+                        <span>$</span>
+                      </div>
+                      <div class="input-select">
+                        <img src="https://flagsapi.com/NG/flat/64.png" alt="flag"> 
+                        <select> <!-- Options tag are inserted from JavaScript --> </select>
+                      </div>
+                    </div>
+                  </div>               
+                </div>
+  
+                <span><!----You can send a minimum of 2 EUR---->add if/else</span>
+  
+                <div class="rate">
+                  <p> <!-- rates are generated from JavaScript --></p>
+                </div>
+  
+                <div class="form-recipient"> 
+                  <label for=""> Recipient gets </label>
+                  <div class="f-recip">
+                     <input type="text" value="0">
+
+                     <div class="reci-sub">
+                      <div>
+                        <span>
+                          #
+                        </span>
+                      </div>
+
+                      <div class="input-select">
+                        <img src="https://flagsapi.com/BE/flat/64.png" >                  
+                        <select> <!-- Options tag are inserted from JavaScript --> </select>
+                      </div>
+                      
+                     </div>
+                    
+                  </div>
+                </div>
+  
+                <div class="f-delivery h4">
+                   <p class="h4">Delivery Method</p>
+                   <div class="sel">
+                    <select name="" id="payment-option">
+                      <option value="0">Bank account</option>
+                      <option value="1">Bank card</option>
+                    </select>
+                   </div>
+                </div>
+                <div class="fee">
+                  <p class="h4">Fee</p>
+                  <div class="span-fee">
+                    <span class="h4">
+                     0 EUR <!----Add 0.3% of amount as fee with javascript and amount currency---->
+                    </span>
+                  </div>
+                </div>
+                <div class="transfer h4">
+                  <p>Transfer Time</p>
+                  <span>Within 24 hours</span>
+                </div>
+                <div class="voucher h4">
+                  <p class="voucher-text">
+                    Enter Voucher code
+                  </p>
+                  <div class="voucher-accordion">
+                    <p></p>
+                  </div>
+                </div>
+                <div class="to-pay">
+                  <p class="h4">Amount to pay</p>
+                  <div class="span-pay">
+                    <span class="h4">
+                     0 EUR <!----Add fee + amount  with javascript and amount currency---->
+                    </span>
+                  </div>
+                </div>
+                <div class="r-gets">
+                  <p class="h4">Recipient gets</p>
+                  <div class="span-gets">
+                    <span class="h4">
+                     0 EUR <!---- amount - fee with javascript and Recipient currency ---->
+                    </span>
+                  </div>
+                </div>
+  
+                <button type="button" class="btn btn-form">Send Money</button>
+              </form>
+            
+            <div class="h-icon">
+              <img src="/images/app-store.png" alt="" class="gs-h-icon"/>
+              <img src="/images/app-store.png" alt="" srcset="" class="gs-h-icon"/>
+            </div>
+            
+            </div>
+         
+        </div>
+
+      </div>  
+
+      </section>
+
+       <!---------GET STARTED----------->
+
+      <section id="get-started">
+        <div class="container">
+          <div class="gs-container">
+
+            <div class="gs-content">
+
+                <div class="gs-text">
+                  <h2 class="h2">Get started in minutes</h2>
+                 
+                   <p class="h3">
+                         Create and start using your
+                          Send account in 4 easy steps
+                           via web or the mobile app
+                          whichever one works best for you!
+                   </p>
+                </div>
+
+              <ul class="gs-list">
+
+                <li class="gs-link h4">
+                  
+                  <i class="fa-solid fa-circle"></i>
+
+                  <p class="gs-item">Sign up with email address</p>
+                </li>
+
+                <li class="gs-link h4">
+                  <i class="fa-solid fa-circle"></i>
+
+                  <p class="gs-item">Verify your identity</p>
+                </li>
+
+                <li class="gs-link h4">
+                  <i class="fa-solid fa-circle"></i>
+
+                  <p class="gs-item">Send money</p>
+                </li>
+
+                <li class="gs-link h4">
+                  <i class="fa-solid fa-circle"></i>
+
+                    <p class="gs-item">Check transfer status in real-time</p>
+                  </li>
+
+              </ul>
+
+              <div class="h-icon">
+                <img src="/images/app-store.png" alt="" class="gs-h-icon"/>
+                <img src="/images/app-store.png" alt="" srcset="" class="gs-h-icon" />
+              </div>
+            </div>
+
+            <div class="gs-img">
+              <img src="/images/phone.jpg" alt="A phone image" srcset="" class="gs-phone-img"/>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+       <!-----------SEND------------>
+
+      <section id="send">
+        <div class="container">
+            <div class="s-content">
+                <h2 class="h2">
+                    Everything you need to send <br>money conveniently
+                </h2>
+
+                <ul class="s-list ">
+                    <li class="s-list-item ">
+                        <div class="s-list-img">
+                           <img src="/images/fast-payout.png" alt="" class="list-img">
+                        </div>
+                        <div class="s-list-content">
+                            <h3 class="h3">
+                                Fast payouts
+                            </h3>
+                            <p class="h4">
+                                We proces payments as soon as your 
+                                bank authorises the transactions,
+                                Recipients receive money in minutes,
+                                 depending on the country.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="s-list-item ">
+                        <div class="s-list-img">
+                           <img src="/images/card-transfer.png" alt="" class="list-img">
+                        </div>
+                        <div class="s-list-content">
+                            <h3 class="h3">
+                                Low-cost transfer fee
+                            </h3>
+                            <p class="h4">
+                               Send up to $20,000 to recipients 
+                               anywhere, for a flat transfer fee.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="s-list-item ">
+                        <div class="s-list-img">
+                           <img src="/images/padlock-1.png" alt="" class="list-img">
+                        </div>
+                        <div class="s-list-content">
+                            <h3 class="h3">
+                                Private and secure
+                            </h3>
+                            <p class="h4">
+                                Your funds and Private information are
+                                 protected by the most secure 
+                                 technology and according to local and 
+                                 global regulations
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </section>
+
+       <!-----------RECIPIENT------------>
+
+      <section id="recipient">
+        <div class="container">
+            <div class="r-content">
+                <h2 class="h2">
+                    Choose how your<br> recipients get paid
+                </h2>
+
+                <ul class="s-list s-list2">
+                    <li class="s-list-item">
+                        <div class="s-list-img">
+                           <img src="/images/bank-transfer.png" alt="" class="list-img">
+                        </div>
+                        <div class="s-list-content">
+                            <h3 class="h3">
+                                Bank transfer
+                            </h3>
+                            <p class="h4">
+                               Send money from anywhere
+                                to the recipient's local bank
+                                 account.They'll receive
+                                funds in the local currency 
+                                too.
+                               
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="s-list-item">
+                        <div class="s-list-img">
+                           <img src="/images/cash-pickup.png" alt="" class="list-img">
+                        </div>
+                        <div class="s-list-content">
+                            <h3 class="h3">
+                              Cash pickup
+                            </h3>
+                            <p class="h4">
+                               Your recipients can get the 
+                               cash you send via Send 
+                               directly from accredited pick
+                               -up locations.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="s-list-item">
+                        <div class="s-list-img">
+                           <img src="/images/mobile-money.png" alt="" class="list-img">
+                        </div>
+                        <div class="s-list-content">
+                            <h3 class="h3">
+                              Mobile money
+                            </h3>
+                            <p class="h4">
+                                Send money directly to
+                                Mobile Money wallets; all you
+                                need is your recipient's mobile
+                                number and network operator.
+                        </div>
+                    </li>
+
+                    <li class="s-list-item">
+                        <div class="s-list-img">
+                           <img src="/images/barter.png" alt="" class="list-img">
+                        </div>
+                        <div class="s-list-content">
+                            <h3 class="h3">
+                                Barter
+                            </h3>
+                            <p class="h4">
+                               Recipients in select African countries can receive 
+                               money from via their Barter accounts, in their local currency.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+      </section>
+
+       <!------------SECURITY----------->
+
+      <section id="security">
+        <div class="section-container">
+
+          <div class="img-a">
+            <img src="/images/heli-bac.jpeg" alt="" srcset="" class="s-img">
+          </div>
+
+          <div class="se-content">
+            <h2 class="h2">
+              We take your security seriously
+            </h2>
+            <p class="h4">
+               Send is powered by Flutterwave - Africa's
+                largest payment network - using the same
+                infrastructure that powers some of the
+                biggest companiesin the world.
+                Flutterwave is ISO certified (ISO 27001 &
+                22301 certification) which means all 
+                international standards are always
+                implemented and all transactions are
+                secure.
+            </p>
+        </div>
+
+        <div class="img-a">
+          <img src="/images/ground-train.png" alt="" srcset="" class="s-img">
+        </div>
+
+        </div>
+       
+         
+        
+      </section>
+     
+       <!--------------FAQS------------>
+
+      <section id="FAQ">
+        <div class="container">
+          <div class="f-content">
+
+          <h2 class="h2">Frequently Asked Questions</h2>
+            <div class="faqs-sections">
+               <div class="faq-accordion">
+                <div class="question-wrapper">
+                  <div class="f-question">
+                    <p class="question h3" title="">
+                        What is Send?                    
+                    </p>
+                  </div>
+
+                  <div>
+                    <i class="fa-solid fa-angle-up f-icon active"></i>   
+                    <i class="fa-solid fa-angle-down f-icon"></i> 
+                  </div>
+                       
+                </div>
+
+                 <div class="answer-wrapper">
+                  <p class="answer h4">
+                    Groups can start at as low as 8 people depending on the travel
+                    provider. Plus, there is no size limit or maximum number of
+                    passengers. The more, the merrier!
+                  </p>
+                 </div>
+               </div>
+
+               <div class="faq-accordion">
+                <div class="question-wrapper">
+                  <div class="f-question">
+                    <p class="question h3" title="">
+                      Which locations can i send money from?
+                    </p>
+                  </div>
+
+                  <div>
+                    <i class="fa-solid fa-angle-up f-icon active"></i>   
+                    <i class="fa-solid fa-angle-down f-icon"></i> 
+                  </div>
+
+                </div>
+                <div class="answer-wrapper">
+                  <p class="answer h4">
+                    Groups can start at as low as 8 people depending on the travel
+                    provider. Plus, there is no size limit or maximum number of
+                    passengers. The more, the merrier!
+                  </p>
+                </div>
+               </div>
+
+               <div class="faq-accordion">
+                <div class="question-wrapper">
+                  <div class="f-question">
+                    <p class="question h3" title="">
+                      How can i pay for my transfer?
+                    </p>
+                  </div>
+
+                  <div>
+                    <i class="fa-solid fa-angle-up f-icon active"></i>   
+                    <i class="fa-solid fa-angle-down f-icon"></i> 
+                  </div>                                
+               </div>
+               
+               <div class="answer-wrapper">
+
+                <p class="answer h4">
+                  Groups can start at as low as 8 people depending on the travel
+                  provider. Plus, there is no size limit or maximum number of
+                  passengers. The more, the merrier!
+                </p>
+              </div>
+              
+
+               </div>
+
+                <div class="faq-accordion">
+                <div class="question-wrapper">
+                  <div class="f-question">
+                    <p class="question h3" title="">
+                      Which locations can i send money to?
+                    </p>
+                  </div>
+
+                  <div>
+                    <i class="fa-solid fa-angle-up f-icon active"></i>   
+                    <i class="fa-solid fa-angle-down f-icon"></i> 
+                  </div>   
+
+                </div>
+                
+                <div class="answer-wrapper">
+                  <p class="answer h4">
+                    Groups can start at as low as 8 people depending on the travel
+                    provider. Plus, there is no size limit or maximum number of
+                    passengers. The more, the merrier!
+                  </p>
+                </div>
+                </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    
+       <!--------------FOOTER------------>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+
+          <div class="footer-top">
+            <div class="ft-text">
+              <div class="logo">
+                <h2 class="h2 h-logo">$end</h2>
+              </div>
+
+              <p class="h4">
+                The best way to send money is via send.<br>
+                The best time to send money is now. Do it now.
+              </p>
+            </div>
+
+            <div class="ft-links">
+              <ul class="ft-list">
+                <li class="ft-list-item sub h4">Company</li>
+                <li class="ft-list-item h4">About us</li>
+                <li class="ft-list-item h4">For Business</li>
+              </ul>
+
+              <ul class="ft-list">
+                <li class="ft-list-item sub h4"> Support</li>
+                <li class="ft-list-item h4"> Contact us</li>
+                <li class="ft-list-item h4"> FAQs</li>
+
+              </ul>
+
+              <ul class="ft-list">
+                <li class="ft-list-item sub h4">Legal</li>
+                <li class="ft-list-item h4">Terms and Conditions</li>
+                <li class="ft-list-item h4">Privacy Notice</li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-mid">
+            <div class="h-icon">
+              <img src="/images/app-store.png" alt="" class="gs-h-icon"/>
+              <img src="/images/app-store.png" alt="" class="gs-h-icon" />
+            </div>
+
+            <div class="socials h4">
+              <a href="https://www.Twitter.com">Twitter</a>
+              <a href="https://www.facebook.com">facebook</a>
+              <a href="https://www.Instagram.com">Instagram</a>
+              <a href="https://www.TikTok.com">TikTok</a>
+
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="copyright h4 ">
+             &copy; Flutterwave 
+            </div>
+
+            <p class="footer-text h4">
+              *Send is a money transfer platform powered by Flutterwave.</br>
+              *Send does not store your money or charge your</br> 
+              added card without authentication from you.
+              *Through Flutterwave's lincences and partnerships,</br>
+              Send is authorized to transfer money.
+              OUR SERVICES AND SITE ARE NOT AVAILABLE</br>
+               TO RESIDENTS OF THE STATE OF TEXAS OR</br> 
+               INDIVIDUALS DO*ICILED IN THE STATE OF TEXAS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="country_code.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
