@@ -324,14 +324,13 @@ form{
     border-right: 2px solid #fff;
 }
 
-
-
 form p,
 .form-send label,
 .form-recipient label{
     color:var(--dark-gray);
     font-weight: var(--fw-1);
 }
+
 
 form .form-container input{
     position: absolute;
@@ -383,10 +382,28 @@ form .form-container input{
 }
 
 
-
 .h-icon{
     display: flex;
     flex-direction: row;
+}
+
+#login-form{
+    margin: auto;
+    height: 100%;
+    width: 320px;
+}
+
+.login-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-content ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 #Home,
@@ -745,6 +762,10 @@ footer{
 @media only screen and (min-width: 1024px) {
     .container {
       max-width: 1200px;
+    }
+
+    header{
+       width: 100%; 
     }
 
     .nav-toggle-btn{display: none;}
