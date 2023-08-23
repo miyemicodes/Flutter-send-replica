@@ -76,10 +76,8 @@ button{cursor: pointer;}
 
 input{
     width: 100%;
-    padding: 6px 15px;
-    border-radius: 15px;
-    outline: none;
-    border: 1px solid #908b8b52;
+    border: none;
+    outline:none;
 }
 
 select{
@@ -284,15 +282,12 @@ form{
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.4);
 }
 
-.form-container{
-    position: relative;
-    margin-bottom:15px;
-}
-
- .form-send label,
- .form-recipient label{
+.form-send label,
+ .form-recipient label,
+ .l-form-container label{
     display: block;
     text-align: left;
+    padding: 4px;
 }
 
 .input-select img{
@@ -331,18 +326,16 @@ form p,
     font-weight: var(--fw-1);
 }
 
-
-form .form-container input{
-    position: absolute;
-}
-
-
-.amount-sub,
-.reci-sub{
+.form-send .amount-sub,
+.form-recipient .reci-sub {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    padding: 6px 15px;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid var(--dull-gray);
+    margin-bottom:10px;
 }
 
 .f-delivery,
@@ -353,6 +346,7 @@ form .form-container input{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom:10px ;
 }
 
 .fee span,
@@ -381,7 +375,6 @@ form .form-container input{
     
 }
 
-
 .h-icon{
     display: flex;
     flex-direction: row;
@@ -404,6 +397,22 @@ form .form-container input{
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+}
+
+.l-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.l-input{
+    padding: 6px 15px;
+    border-radius: 15px;
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--dull-gray);
 }
 
 #Home,
