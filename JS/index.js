@@ -64,4 +64,12 @@ $(".question-wrapper").click( function () {
     }
     }
 
+
+    const firstInput = document.querySelector('.firstInput');
+    const firstSelectOption = document.querySelector('.firstSelectOption');
+    const secondInput = document.querySelector('.secondInput');
+    const secondSelectOption = document.querySelector('.secondSelectOption');
+    const youSend = document.querySelector('.youSend');
+    const rate = document.querySelector('.rate');
+    const totalPay = document.querySelector('.totalPay');
   
