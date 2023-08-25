@@ -30,7 +30,10 @@ $(".question-wrapper").click( function () {
     }
   });
 
-  const dropList = document.querySelectorAll(".input-select select");
+  const dropList = document.querySelectorAll(".input-select select"),
+  amount = document.querySelector(".f-amount input"),
+  fromCurrency = document.querySelectorAll(".amount-sub select"),
+  toCurrency = document.querySelector(".reci-sub select");
 
   for (let i = 0; i < dropList.length; i++) {
 
@@ -38,9 +41,9 @@ $(".question-wrapper").click( function () {
 
         let selected;
           if (i == 0) {
-            selected = currency_code == "NG" ? "selected " : "";
+            selected = currency_code == "NGN" ? "selected " : "";
           }else if(i == 1){
-              selected = currency_code == "BE" ? "selected " : "" ;  
+              selected = currency_code == "USD" ? "selected " : "" ;  
           }
 
 
@@ -60,3 +63,5 @@ $(".question-wrapper").click( function () {
         }
     }
     }
+
+  

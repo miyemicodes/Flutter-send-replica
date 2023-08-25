@@ -383,8 +383,10 @@ form p,
 #login-form{
     margin: auto;
     height: 100%;
-    width: 320px;
+    width: 70%;
 }
+
+#login-form h2{text-align: left;}
 
 .login-content{
     display: flex;
@@ -407,12 +409,69 @@ form p,
     gap: 10px;
 }
 
-.l-input{
+.l-email{ width: 100%;}
+
+.l-email input{
     padding: 6px 15px;
     border-radius: 15px;
-    width: 100%;
-    outline: none;
+    outline:none;
     border: 2px solid var(--dull-gray);
+}
+
+.btn-form-login{
+    border: 2px solid var(--green-2);
+    background: var(--white);
+    color: var(--green-2);
+    border-radius: 20px;
+    width: 100%;
+    padding: 8px 15px;
+}
+
+
+.btn-form-login:is(:hover, :focus){
+    border: 3px solid var(--white);
+    background: var(--green-2);
+    color: var(--white);
+}
+
+.login-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.login-links a{
+    width: 100%;
+    color: var(--white);
+}
+
+.link-text{width: 100%;}
+
+.l-google{
+    background: var(--blue-1);
+    border-radius: 20px;
+    padding: 8px 15px;
+}
+
+.l-apple{
+    border: 3px solid var(--black);
+    border-radius: 20px;
+    padding: 8px 15px;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green-2);
+}
+
+.text a {
+    color: var(--green-2);
+
 }
 
 #Home,
