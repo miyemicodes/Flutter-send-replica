@@ -53,46 +53,55 @@
 
     <main>
       <form action="" id="login-form">
-        <h2>Welcome, let's get started</h2>
-        <p>Fill in your email address to continue</p>
+        <div class="signup-text">
+          <h2 class="h3">Welcome, let's get started</h2>
+          <p class="h5">Fill in your email address to continue</p>
+        </div>
+       
         <div class="l-form-container">
-          <div class="l-email">
-            <label for="email">Email Address</label>
+          <div class="l-email h5">
+            <label for="email">Email address</label>
             <input type="email" name="emailId" class="l-input" />
           </div>
 
-          <button type="button">Continue</button>
+          <button type="button" class="btn-form-login">
+            Continue
+          </button>
 
           <div class="terms">
-            <h4>
+            <p>
               By continuing you accept our <a href="#">Terms of use</a> and
               <a href="#">Privacy Notice</a>
-            </h4>
+            </p>
           </div>
 
-          <div>
-            <small>or</small>
+          <div class="l-small h5">
+            <p>
+            or 
+            </p>
           </div>
 
           <div class="login-links">
+
             <a href="http://google.com">
-              <div class="link-text">
-                <img src="" alt="" />
-                <p>Continue with Google</p>
+              <div class="link-text l-google">
+                <img src="images/search.png" alt="" />
+                <p class="h5">Continue with Google</p>
               </div>
             </a>
 
-            <a href="http://apple store.com">
-              <div class="link-text">
-                <img src="" alt="" />
-                <p>Continue with Apple</p>
+            <a href="http://apple store.com" >
+              <div class="link-text l-apple">
+                <img src="images/apple-logo.png" alt="" />
+                <p class="h5">Continue with Apple</p>
               </div>
             </a>
+
           </div>
 
           <div class="text">
-            <p>New to Send ?</p>
-            <a href="signup.html">Sign up</a>
+            <p>Already have an account?</p>
+            <a href="signup.html">Log in</a>
           </div>
         </div>
       </form>

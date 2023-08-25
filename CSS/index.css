@@ -3,11 +3,11 @@
     /* COLOR */
     
     --white :#fff;
-    --blue-1: #699df3;
+    --blue-1: #0e63eb;
     --dark-blue :#2f3158;
     --darken-blue :#242546;
     --green-1: #87ebc7;
-    --green-2: #03c47dda;
+    --green-2: #147620ee;
     --light-gray:#f3f3f3;
     --gray : #efe8e874;
     --dull-gray: #cecaca84;
@@ -209,7 +209,7 @@ body{
 .navbar-list .btn{
 border-radius: 20px;
 width: 100%;
-padding: 8px 15px;
+padding: 10px 35px;
 margin-bottom:15px;
 text-align: center;
 font-weight: var(--fw-1);
@@ -411,6 +411,8 @@ form p,
 
 .l-email{ width: 100%;}
 
+.l-email label{color: var(--dark-gray);}
+
 .l-email input{
     padding: 6px 15px;
     border-radius: 15px;
@@ -420,8 +422,8 @@ form p,
 
 .btn-form-login{
     border: 2px solid var(--green-2);
-    background: var(--white);
-    color: var(--green-2);
+    background: var(--green-2);
+    color: var(--white);
     border-radius: 20px;
     width: 100%;
     padding: 8px 15px;
@@ -448,7 +450,18 @@ form p,
     color: var(--white);
 }
 
-.link-text{width: 100%;}
+.link-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.link-text img{
+    width: 17px;
+    height: 17px;
+}
 
 .l-google{
     background: var(--blue-1);
@@ -456,23 +469,78 @@ form p,
     padding: 8px 15px;
 }
 
+.l-google p{ color: var(--white);}
+
 .l-apple{
     border: 3px solid var(--black);
     border-radius: 20px;
     padding: 8px 15px;
 }
 
+
+/*  to refactor this code ( div and a )
+.l-apple:is(:hover, :focus){
+    background: var(--black);
+}
+
+
+.l-small p::before{
+    content: "";
+    border: 1px solid var(--blue-1);
+}
+
+.l-small p::after{
+    content: "";
+    border: 1px solid var(--blue-1);
+}
+
+
+
+*/
+
+.l-apple p,
+.text p,
+.l-small p{
+    font-weight: var(--fw-2);
+    color: var(--black);
+}
+
+
 .text{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 3px;
     color: var(--green-2);
 }
 
 .text a {
     color: var(--green-2);
-
 }
+
+.text a:is(:hover, :focus),
+.terms a:is(:hover, :focus){
+    text-decoration: underline;
+}
+
+.signup-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+    color: var(--black);
+}
+
+.signup-text p{color: var(--black);}
+
+.terms p{color: var(--black);}
+
+.terms a {
+    display: inline-block;
+    color: var(--green-2);
+}
+
 
 #Home,
 #get-started,
