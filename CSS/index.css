@@ -306,6 +306,7 @@ form{
     background-color: transparent;
     font-weight: 600;
     margin: 0 -5px 0 5px;
+    outline: none;
     width: auto;
 }
 
@@ -373,6 +374,22 @@ form p,
     color: #30b584;
     font-weight: var(--fw-2);
     
+}
+
+.btn-form{
+    border:none;
+    background: var(--dark-gray);
+    color: var(--white);
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px 15px;
+    letter-spacing: 0.1rem;
+    
+}
+
+.btn-form.active{
+    border: 2px solid var(--green-2);
+    background: var(--green-2);
 }
 
 .h-icon{

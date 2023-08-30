@@ -30,10 +30,10 @@ $(".question-wrapper").click( function () {
     }
   });
 
-  const dropList = document.querySelectorAll(".input-select select"),
-  amount = document.querySelector(".f-amount input"),
-  fromCurrency = document.querySelectorAll(".amount-sub select"),
-  toCurrency = document.querySelector(".reci-sub select");
+  const dropList = document.querySelectorAll(".input-select select");
+  const amount = document.querySelector(".f-amount input");
+  const fromCurrency = document.querySelectorAll(".amount-sub select");
+  const toCurrency = document.querySelector(".reci-sub select");
 
   for (let i = 0; i < dropList.length; i++) {
 
@@ -67,9 +67,11 @@ $(".question-wrapper").click( function () {
 
     const firstInput = document.querySelector('.firstInput');
     const firstSelectOption = document.querySelector('.firstSelectOption');
+    const minMaxSend = document.querySelector('.minMaxSend');
+    const generateRate = document.querySelector('.generateRate');
     const secondInput = document.querySelector('.secondInput');
     const secondSelectOption = document.querySelector('.secondSelectOption');
-    const youSend = document.querySelector('.youSend');
-    const rate = document.querySelector('.rate');
+    const fee = document.querySelector('.span-fee');
     const totalPay = document.querySelector('.totalPay');
+    const toGet = document.querySelector('.toGet');
   

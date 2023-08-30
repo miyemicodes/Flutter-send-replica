@@ -106,22 +106,22 @@
                       <span>$</span>
                     </div>
                     <div class="f-amount">
-                      <input type="text" value="0" >
+                      <input type="text" value="0" class="firstInput" >
                     </div>     
                     
                     <div class="input-select">
                       <img src="https://flagsapi.com/NG/flat/64.png" alt="flag" class="form-img"> 
-                      <select> <!-- Options tag are inserted from JavaScript --> </select>
+                      <select class="firstSelectOption"> <!-- Options tag are inserted from JavaScript --> </select>
                     </div>  
                     
                   </div>
   
                 </div>
   
-                <span><!----You can send a minimum of 2 EUR---->add if/else</span>
+                <span class="minMaxSend"><!----You can send a minimum of 2 EUR---->add if/else</span>
   
                 <div class="rate">
-                  <p> <!-- rates are generated from JavaScript --></p>
+                  <p class="generateRate"> <!-- rates are generated from JavaScript --></p>
                 </div>
   
                 <div class="form-recipient"> 
@@ -135,12 +135,12 @@
                     </div>
 
                     <div class="f-recip">
-                      <input type="text" value="0">                   
+                      <input type="text" value="0" class="secondInput">                   
                    </div>
 
                     <div class="input-select">
                       <img src="https://flagsapi.com/US/flat/64.png" alt="flag" class="form-img" >      
-                        <select> <!-- Options tag are inserted from JavaScript --> </select>
+                        <select class="secondSelectOption"> <!-- Options tag are inserted from JavaScript --> </select>
                     
                     </div>
 
@@ -159,8 +159,8 @@
                 </div>
                 <div class="fee">
                   <p class="h4">Fee</p>
-                  <div class="span-fee">
-                    <span class="h4">
+                  <div >
+                    <span class="h4 span-fee">
                      0 EUR <!----Add 0.3% of amount as fee with javascript and amount currency---->
                     </span>
                   </div>
@@ -179,22 +179,22 @@
                 </div>
                 <div class="to-pay">
                   <p class="h4">Amount to pay</p>
-                  <div class="span-pay">
-                    <span class="h4">
+                  <div >
+                    <span class="h4 totalPay">
                      0 EUR <!----Add fee + amount  with javascript and amount currency---->
                     </span>
                   </div>
                 </div>
                 <div class="r-gets">
                   <p class="h4">Recipient gets</p>
-                  <div class="span-gets">
-                    <span class="h4">
+                  <div>
+                    <span class="h4 toGet">
                      0 EUR <!---- amount - fee with javascript and Recipient currency ---->
                     </span>
                   </div>
                 </div>
   
-                <button type="button" class="btn btn-form">Send Money</button>
+                <button type="button" class="h4 btn btn-form">Send Money</button>
                 </div>
           
               </form>
