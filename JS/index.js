@@ -31,9 +31,14 @@ $(".question-wrapper").click( function () {
   });
 
   const dropList = document.querySelectorAll(".input-select select");
-  const amount = document.querySelector(".f-amount input");
-  const fromCurrency = document.querySelectorAll(".amount-sub select");
-  const toCurrency = document.querySelector(".reci-sub select");
+  const symbolSpan1 = document.querySelector("#symbol1");
+  const symbolSpan2 = document.querySelector("#symbol2");
+
+
+  symbolSpan1.innerHTML = currencyList["NGN"][4];
+  symbolSpan2.innerHTML = currencyList["USD"][4];
+
+
 
   for (let i = 0; i < dropList.length; i++) {
 
@@ -42,9 +47,12 @@ $(".question-wrapper").click( function () {
         let selected;
           if (i == 0) {
             selected = currency_code == "NGN" ? "selected " : "";
+          //  symbolSpan1.innerHTML = currencyList[ currency_code][4];
           }else if(i == 1){
               selected = currency_code == "USD" ? "selected " : "" ;  
-          }
+             // symbolSpan2.innerHTML = currencyList[ currency_code][4];
+
+          } 
 
 
         let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
@@ -53,6 +61,18 @@ $(".question-wrapper").click( function () {
 
       dropList[i].addEventListener("change", e => {
         loadFlag(e.target);
+        console.log(e.target.value);
+        const getSingleCurrencyList = currencyList[e.target.value][4];
+
+        if (i == 0) {
+          symbolSpan1.innerHTML = getSingleCurrencyList;
+        }else if(i == 1){
+          symbolSpan2.innerHTML = getSingleCurrencyList;
+        }
+
+        console.log(getSingleCurrencyList);
+   
+
     });
   }
   function loadFlag(element) {
