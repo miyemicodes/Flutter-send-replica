@@ -95,3 +95,12 @@ $(".question-wrapper").click( function () {
     const totalPay = document.querySelector('.totalPay');
     const toGet = document.querySelector('.toGet');
   
+
+   function minMaxSendText (){
+    const firstInputVal = firstInput.value;
+    const secondInputVal = secondInput.value;
+
+    if (firstInputVal >= "2000"){
+      minMaxSend.innerText = `" You can send a mininum of 2000 "${symbolSpan1}` ;
+    }
+    }
