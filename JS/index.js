@@ -94,18 +94,30 @@ $(".question-wrapper").click( function () {
     const fee = document.querySelector('.span-fee');
     const totalPay = document.querySelector('.totalPay');
     const toGet = document.querySelector('.toGet');
-  
 
-   function minMaxSendText (){
-    const firstInputVal = firstInput.value;
-    const secondInputVal = secondInput.value;
 
-    if (firstInputVal >= "2000"){
-      minMaxSend.innerText = `" You can send a maximum of 2000 "${symbolSpan1}` ;
-    }
 
-    if (secondInputVal  <= "2"){
-      minMaxSend.innerText = `" You can send a mininum of 2 "${symbolSpan2}` ;
-    }
 
-    }
+    firstInput.addEventListener("keyup", function (e){
+    console.log(e);
+
+   const firstValue = Number(e.target.value);
+   if (isNaN(firstValue) ) {
+    console.log( "its not  a number" )
+   }else{
+    console.log( "its a number" )
+      if (firstValue < 2){
+        minMaxSend.innerHTML = "You can send a minimum of 2 ";
+      }else if(firstValue > 2000) {
+        minMaxSend.innerHTML = "You can only send a maximum of 2000 ";
+      }
+      else {
+        minMaxSend.innerHTML = " ";
+      }
+   }
+
+    }); 
+
+
+    
+ 
