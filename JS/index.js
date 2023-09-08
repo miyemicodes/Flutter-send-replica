@@ -101,6 +101,11 @@ $(".question-wrapper").click( function () {
     const secondInputVal = secondInput.value;
 
     if (firstInputVal >= "2000"){
-      minMaxSend.innerText = `" You can send a mininum of 2000 "${symbolSpan1}` ;
+      minMaxSend.innerText = `" You can send a maximum of 2000 "${symbolSpan1}` ;
     }
+
+    if (secondInputVal  <= "2"){
+      minMaxSend.innerText = `" You can send a mininum of 2 "${symbolSpan2}` ;
+    }
+
     }
