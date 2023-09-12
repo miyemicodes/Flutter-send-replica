@@ -5,7 +5,7 @@ function getExchangeRate(fromCurrency,toCurrency,firstInputValue) {
       generateRate.innerText  = "Getting Exchange Rate...";
       console.log(generateRate);
  // const fromCurrency = 'NGN';
-  //const toCurrency = 'GBP';
+  //const toCurrency = 'USD';
   let url =`https://v6.exchangerate-api.com/v6/6a6ead58ebb1ba417d61d4ed/latest/${fromCurrency}`; 
   fetch (url).then(response => response.json()).then(result=>{
     //console.log(result);
@@ -13,12 +13,13 @@ function getExchangeRate(fromCurrency,toCurrency,firstInputValue) {
       let exchangeRate = result["conversion_rates"][toCurrency];
 
       let totalExchangeRate = (firstInputValue * exchangeRate).toFixed(2);
-    console.log(exchangeRate);
-    console.log(totalExchangeRate);
-     
-      //exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value}= ${totalExchangeRate} ${toCurrency.value}`;
+        console.log(exchangeRate);
+        console.log(totalExchangeRate);
+        
+      generateRate.innerText = `${firstInputValue} ${fromCurrency} = ${totalExchangeRate} ${toCurrency}`;
+      console.log(generateRate.innerText);
   }).catch(() =>{
-     // exchangeRateTxt.innerText = "Something Went Wrong";
+     generateRate.innerText = "Something Went Wrong";
   })
 }
 
