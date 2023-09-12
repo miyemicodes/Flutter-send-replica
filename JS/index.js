@@ -1,3 +1,27 @@
+
+function getExchangeRate(fromCurrency,toCurrency,firstInputValue) {
+  
+  //exchangeRateTxt.innerText  = "Getting Exchange Rate...";
+ // const fromCurrency = 'NGN';
+  //const toCurrency = 'GBP';
+  let url =`https://v6.exchangerate-api.com/v6/6a6ead58ebb1ba417d61d4ed/latest/${fromCurrency}`; 
+  fetch (url).then(response => response.json()).then(result=>{
+    //console.log(result);
+    //console.log(result["conversion_rates"][toCurrency]);
+      let exchangeRate = result["conversion_rates"][toCurrency];
+
+      let totalExchangeRate = (firstInputValue * exchangeRate).toFixed(2);
+    console.log(exchangeRate);
+    console.log(totalExchangeRate);
+     
+      //exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value}= ${totalExchangeRate} ${toCurrency.value}`;
+  }).catch(() =>{
+     // exchangeRateTxt.innerText = "Something Went Wrong";
+  })
+}
+
+getExchangeRate("NGN","GBP",1000);
+
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const header = document.querySelector("[data-header]");
 
