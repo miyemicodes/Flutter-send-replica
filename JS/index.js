@@ -1,7 +1,9 @@
 
 function getExchangeRate(fromCurrency,toCurrency,firstInputValue) {
   
-  //exchangeRateTxt.innerText  = "Getting Exchange Rate...";
+      const generateRate = document.querySelector('.generateRate');
+      generateRate.innerText  = "Getting Exchange Rate...";
+      console.log(generateRate);
  // const fromCurrency = 'NGN';
   //const toCurrency = 'GBP';
   let url =`https://v6.exchangerate-api.com/v6/6a6ead58ebb1ba417d61d4ed/latest/${fromCurrency}`; 
@@ -112,7 +114,6 @@ $(".question-wrapper").click( function () {
     const firstInput = document.querySelector('.firstInput');
     const firstSelectOption = document.querySelector('.firstSelectOption');
     const minMaxSend = document.querySelector('.minMaxSend');
-    const generateRate = document.querySelector('.generateRate');
     const secondInput = document.querySelector('.secondInput');
     const secondSelectOption = document.querySelector('.secondSelectOption');
     const fee = document.querySelector('.span-fee');

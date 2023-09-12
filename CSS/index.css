@@ -3,6 +3,7 @@
     /* COLOR */
     
     --white :#fff;
+    --red-danger :#f12136;
     --blue-1: #0e63eb;
     --dark-blue :#2f3158;
     --darken-blue :#242546;
@@ -355,6 +356,10 @@ form p,
 .to-pay span,
 .r-gets span{
     font-weight: var(--fw-3);
+}
+
+.minMaxSend{
+    color: var(--red-danger);
 }
 
 .f-delivery select{
